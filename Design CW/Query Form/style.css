@@ -1,0 +1,217 @@
+/**
+*! Changing Default Browser Styles
+**/
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row ;
+}
+
+/**
+*! Style rules for content section
+**/
+
+.content {
+    background-color: #2b91f7fd;
+    width: 55%;
+    min-height: 50vh;
+    padding: 10px 20px;
+}
+
+.image {
+    background-image: url("Minions.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /*border: 1px solid black;*/
+    height: 100%;
+    
+}
+.logo {
+
+    
+}
+
+/**
+*! Changing Style Rules for Form
+**/
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    /*max-width: 400px;*/
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    padding: 50px;
+
+}
+
+.title  {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px ;
+}
+
+
+form> div> input {
+    width : 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+label {
+
+    display: block;
+    margin-bottom: 5px;
+      
+}
+
+form div {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border: 2px solid #f2796e ;
+}
+
+select {
+
+    width : 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+
+}
+
+form input:focus {
+    border: 2px solid #f2796e ;
+}
+
+/**
+*! Style Rules of form icons
+**/
+
+body {
+    
+}
+
+form> div> i {
+
+position: absolute;
+padding: 10px;
+
+}
+
+.success-icon,
+.failure-icon {
+    
+    opacity: 0;
+}
+
+.failure-icon,
+.error {
+    color: red;
+}
+
+.success-icon {
+    color: green;
+}
+
+.error {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/**
+*! Style rules for buttons 
+**/
+
+button {
+    margin-top: 15px;
+    width : 100%;
+    height : 35px;
+    background-color:  #000099;
+    border: 2px solid #000099;
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer; 
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    
+}
+
+button:hover  {
+
+    opacity: 0.8;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn-Edit,
+.btn-Submit {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    margin-top: 15px;
+    width : 100%;
+    height : 35px;
+    background-color:  #000099;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #000099;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+
+
+}
+
+.btn-Edit:hover,.btn-Submit:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        <!-- Start Quiz Button -->
+        <div class="start_btn"><button>Start Quiz</button></div>
+
+        <!-- Info Box -->
+        <div class="info_box">
+            <div class="info_title">
+                <span>Some Rules of this Quiz</span>
+            </div>
+            <div class="info_list">
+                <div class="info">1. You will get 10 questions under the movie series minions.</div>
+                <div class="info">2. You get 2 marks for each correct answer and -1 for wrong answer.</div>
+                <div class="info">3. <span>One minute</span> is given for each question.</div>
+            </div>
+            <div class="button">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+                
+            </div>
+        </div>
+        <!--Quiz box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Welcome To Quiz</div>
+                <div class="timer">
+                    <div class="time_text">Time Left</div>
+                    <div class="timer_sec">60</div>
+                </div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <!--<span>What color are minions?</span> -->
+                </div>
+                <div class="option_list">
+                    <!--<div class="option">
+                        <span>Blue</span>
+                    </div>
+                    <div class="option">
+                        <span>Orange</span>
+                    </div>
+                    <div class="option">
+                        <span>Yellow</span>
+                        <div class="icon tick"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="option">
+                        <span>Green</span>
+                    </div> -->
+                </div>
+            </section>
+
+            <!-- Quiz Box Footer -->
+            <footer>
+                <div class="total_que">
+                    <!--<span><p>2</p>of</p>20</p>Marks</span> -->
+                </div>
+                <button class="next_btn">Next</button>
+            </footer>
+        </div>
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've compleated the Quiz !</div>
+            <div class="score_text">
+                <!--<span> and sorry, You got only <p>2</p> out of <p> 20</p></span> -->
+            </div>
+            <div class="button">
+                <button class="restart">Reattempt Quiz</button>
+                <button class="quit">Quit</button>
+            </div>
+        </div>
+        <script src="questions.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

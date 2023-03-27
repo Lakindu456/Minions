@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Thumbnails</title>
+        <link rel="stylesheet" href="gallerystyle.css">
+        <link rel="shortcut icon" type="image/x-icon" href="logo.jpg" />
+    </head>
+    <body>
+        <div class="heading"><div><img id="logo" src="logo.jpg" alt="logo" ></div><div class="headingtext">Gallery</div></div>
+        <!-- larger image and details-->
+        <div class="imagebox">
+            <div><img class="imageinbox" src="minions1.jpg" alt="Minion with banana" width="300" height="200"></div>
+            <div id="textfield">We all love bananas so the minions.</div>
+        </div>
+        <br>
+        <hr class="linebreaker">
+
+
+        <!-- selecting radio button-->
+        
+        <div class="flexcontainer">
+            <div class="item item1"><img class="imageselect" src="minions1.jpg" alt="Minion with banana"><input onclick="changeBackgroundImage('Radio1')" class="button1" type="radio" name="colors" value="minions1" id="Radio1" checked></div>
+            <div class="item item2"><img class="imageselect" src="minions2.jpg" alt="Three Minions"><input onclick="changeBackgroundImage('Radio2')" class="button1" type="radio" name="colors" value="minions2" id="Radio2"></div>
+            <div class="item item3"><img class="imageselect" src="minions3.jpg" alt="Minions in shape of heart"><input onclick="changeBackgroundImage('Radio3')" class="button1" type="radio" name="colors" value="minions3" id="Radio3"></div>    
+            <div class="item item4"><img class="imageselect" src="minions4.jpg" alt="Minions in superhero costumes"><input onclick="changeBackgroundImage('Radio4')" class="button1" type="radio" name="colors" value="minions4" id="Radio4"></div>
+            <div class="item item5"><img class="imageselect" src="minions5.jpg" alt="Minions with a mutant"><input onclick="changeBackgroundImage('Radio5')" class="button1" type="radio" name="colors" value="minions5" id="Radio5"></div>
+
+        <!-- selecting  background color-->
+        <div class="menubackground">
+                <h1 class="dropdownmenu">Background color</h1>
+                <select name="selectfontcolor" class="selectfontcolor" onchange="updatebackground(value);">
+                    <option value="#0C457A">Blue</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="White">White</option>
+                </select>
+            </div>
+        <!-- selecting font color-->
+            <div class="menufont">
+                <h1 class="dropdownmenu">Font color</h1>
+                <select name="selectfontcolor" class="selectfontcolor" onchange="updatefont(value);">
+                    <option value="blue">Blue</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="White">White</option>
+                </select>
+            </div>
+        </div>
+        <script>
+            function changeBackgroundImage(x) {
+                console.log(document.getElementById(x).value);
+                if(document.getElementById(x).value == "minions1"){
+                    document.getElementsByClassName("imageinbox")[0].src = 'minions1.jpg';
+                    document.getElementById("textfield").innerHTML = "We all love bananas so the minions.";
+                }
+                if(document.getElementById(x).value == "minions2"){
+                    document.getElementsByClassName("imageinbox")[0].src = 'minions2.jpg';
+                    document.getElementById("textfield").innerHTML = " The evil Minions are purple because purple and yellow are on opposite sides of the color spectrum.";    
+                }
+                if(document.getElementById(x).value == "minions3"){
+                    document.getElementsByClassName("imageinbox")[0].src = 'minions3.jpg';
+                    document.getElementById("textfield").innerHTML = "Look Closer! This is Bob.Bob suffers from heterochromia iridum, making his eyes two different colours";    
+                }
+                if(document.getElementById(x).value == "minions4"){
+                    document.getElementsByClassName("imageinbox")[0].src = 'minions4.jpg';
+                    document.getElementById("textfield").innerHTML = "Did you know? There’s One Man Behind All The Minion Voices.It is the French animator, Pierre Coffin.";   
+                }
+                if(document.getElementById(x).value == "minions5"){
+                    document.getElementsByClassName("imageinbox")[0].src = 'minions5.jpg';
+                    document.getElementById("textfield").innerHTML = "Want to count ? Gru has somewhere around 10,400 minions.";   
+                }
+            }
+            
+
+            function updatebackground(x) {
+                document.body.style.backgroundColor =  x;        
+            }
+
+
+            function updatefont(x){
+                document.body.style.color = x;
+            }
+        </script>
+        <footer>
+            <p>Devoloped By<br>
+            <a href="/PageEditorchamika.html">Chamika Uluwatta</a></p>
+        </footer>
+    </body>
+</html>

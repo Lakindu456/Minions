@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: solid #1C1C1C;
+    color: #000e20;
+    border-width: 0.4px;
+    margin-top: 1px;
+    font-size: 50px;
+    
+}
+
+.heading {
+    background-color: #4E4E4E;
+}
+
+.subtext_heading {
+    color: white;
+}
+
+body{
+    background-color:#484d50 ;
+}
+
+.info{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    padding: 20px;
+    border: solid 5px black;
+    width: 50%;
+}
+
+#tags {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+}
+#tagtext {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(14, 7, 80);
+}
+
+#tasks{
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#secondline {
+    width: 50%;
+}
+
+.tasklist {
+    padding: 30px;
+    font-size: 20px;
+    color: rgb(8, 45, 81);
+    list-style-position: inside;
+    font-weight: bold;
+}

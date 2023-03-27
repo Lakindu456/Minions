@@ -1,0 +1,130 @@
+#logo{/*styling logo*/
+    text-align: left;
+    width: 90px;
+    height: 90px;
+    }
+body {
+    background-color:#0C457A;
+    color: #ffb703;
+}
+.heading {
+    text-align: center;
+    font-size:45px;
+    color: black;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-decoration: underline overline;
+}
+.flexcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10%;
+    
+}
+.imagebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2%;
+    
+}
+
+.item {
+    width:200px;
+    margin:10px;
+    border: 3px solid black;
+    background-color: #ffb703;
+}
+
+.item1 {
+        min-height: 200px;
+        min-width:100px;
+}
+.item2 {
+        min-height: 200px;
+        min-width:100px;
+}
+
+.item3 {
+        min-height: 200px;
+        min-width:100px;
+}
+
+.item4 {
+        min-height: 200px;
+        min-width:100px;
+}
+
+.item4 {
+        min-height: 200px;
+        min-width:100px;
+}
+.item5 {
+        min-height: 200px;
+        min-width:100px;
+}
+
+.rediocontainer{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    
+}
+.button {
+    margin-left: 250px;
+}
+
+#Radio1,#Radio2,#Radio3,#Radio4,#Radio5{
+    margin-top: 30px;
+    margin-left: 50%;
+}
+
+
+.imageselect {
+    height: 100%;
+    width: 100%;
+}
+
+.imageinbox{
+    min-height: 400px;
+    min-width:600px;
+    border: solid black;
+    border-width: 5px;
+}
+#textfield{
+    margin-left: 40px;
+    padding: 20px;
+    border: solid black;
+    font-size: 25px;
+
+}
+.linebreaker{
+    height:2px;
+    border-width:10px;
+    color:rgb(41, 0, 177);
+    background-color:gray;
+    width: 950px;
+}
+#dropdownmenu{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#selectfontcolor{
+    margin-bottom: 50px;
+    border: black;
+}
+
+.menufont,.menubackground {
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(162, 150, 18);
+    color: white;
+  }
+

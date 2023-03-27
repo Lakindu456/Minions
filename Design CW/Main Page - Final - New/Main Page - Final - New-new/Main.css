@@ -1,0 +1,34 @@
+
+* {margin:0;
+    padding:0}
+   
+
+.store{color: black;
+      background-color:#ffb703; 
+      text-align: center;
+      padding: 31px 100px;
+     margin-bottom:0px
+}
+
+
+.head{
+    font-size: 50px;
+    text-align: center;
+}
+
+.para {font-size: 20px;
+  }
+
+.second{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.dm{display:grid;
+    grid-template-columns:repeat(2,240px);
+    grid-template-rows:repeat(2.240px);
+    justify-content:center;
+    gap:30px
+}

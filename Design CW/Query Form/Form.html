@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f1c209b18f.js" crossorigin="anonymous"></script>
+    <Link rel="icon" href = "TitleImage3.jpg" type = "image/x-icon">
+</head>
+
+    <body>
+    <div class="container">
+        <div class="content">
+            <div class="image"></div>
+        </div>
+        <form  action = "mailto:minolidayarathne77@gmail.com" method="get" id="form">
+            <div class="title"> Query Form </div>
+            
+            <!-- /**
+                * ! User Inputs : Customer First Name 
+                **/-->
+            <div>
+                
+                <label for="FirstName"> First Name </label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="FirstName" id="FirstName" placeholder= " Kathie "> 
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check success-icon"></i>
+                <div class="error"></div>           
+            </div>
+
+            <!-- /**
+                * ! User Inputs : Client's Last Name 
+                **/-->
+            <div>
+
+                <label for="LastName"> Last Name </label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="LastName" id="LastName" placeholder=" Lowrence "> 
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check success-icon"></i>
+                <div class="error"></div>
+
+            </div>
+
+            <!-- /**
+                * ! User Inputs : Client's Mobile Contact Number
+                **/-->
+            <div>
+                
+                <label for="MobileNumber"> Mobile Number </label>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <input type="text" name="MobileNumber" id="MobileNumber" placeholder=" 07XXXXXXXX "> 
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+                * ! User Inputs : Client's Email Address 
+                **/-->
+            <div>
+                    
+                    <label for="EmailAddress"> Email Address </label>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" name="EmailAddress" id="EmailAddress" placeholder=" abcde2@gmail.com "> 
+                    <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                    <i class="fa-solid fa-circle-check success-icon"></i>
+                    <div class="error"></div>
+            </div>
+
+            <!-- /**
+                * ! User Inputs : Client's Query Subject 
+                **/--> 
+
+                <div>
+                    <label for = "QuerySubject">Query Subject </label>
+                    <select name="QuerySubject" id="QuerySubject" >
+                        <option value=""> Select Query Subject </option>
+                        <option value="Payments">  1) Payments </option>
+                        <option value="MoneyBackGuarantee"> 2) Money Back Guarantee</option>
+                        <option value="LocalDelivery">  3) Local Delivery </option>
+                        <option value="OverseasShipping">  4) Overseas Shipping</option>
+                        <option value="TrackingOrder">  5) Order Tracking </option>
+                        <option value="Other">  6) Other </option>      
+                    </select>
+
+                </div>
+
+            <!-- /**
+                * ! User Inputs : Client's Query Detail Message
+                **/-->
+            <div>
+                    
+                    <label for="QueryDetails"> Query Message </label>
+                    <textarea rows = "7" id = "QueryDetails" placeholder=" Enter your message  "></textarea>
+                    <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                    <i class="fa-solid fa-circle-check success-icon"></i>
+                    <div class="error"></div>
+            </div>
+
+            <button type="submit" id  = "submit"> Send </button>
+            
+            
+
+
+        
+
+        </form>
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
